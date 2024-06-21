@@ -9,7 +9,16 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play CYOA.</tw-noscript></noscript></tw-story>
-<tw-storydata name="CYOA" startnode="1" creator="Twine" creator-version="2.9.0" format="Harlowe" format-version="3.3.9" ifid="9DEEF0FD-0A52-4A92-959E-B16CF06CE44E" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="800,325" size="100,100">You&#39;re a computer science student at Simon Fraser University, and after months of applying for internships, you finally get a job offer:
+<tw-storydata name="CYOA" startnode="1" creator="Twine" creator-version="2.9.0" format="Harlowe" format-version="3.3.9" ifid="9DEEF0FD-0A52-4A92-959E-B16CF06CE44E" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.fade-in{
+  background-color: red; /*for testing if class applied*/
+  opacity: 0;
+  animation: fadeIn 4s forwards;
+  color: orange;
+}
+
+@keyframes fadeIn{
+  to{ opacity: 1; }
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="800,325" size="100,100">You&#39;re a computer science student at Simon Fraser University, and after months of applying for internships, you finally get a job offer:
 
 &#39;&#39;Software Developer at Atlas&#39;&#39;
 * Developing survellience software
@@ -78,7 +87,7 @@ Protest starts to errupt among the company, as many employees suspect discrimina
 You start to become paranoid knowing the fundamental flaw in training data that will innevidably lead to innocent deaths. You&#39;ve gone too far and decide quitting is no longer an option, cutting down your options.
 
 Do you [[Join the protesters -&gt;Break NDA and protest]]  or [[Continue your work]]?</tw-passagedata><tw-passagedata pid="16" name="Continue your work" tags="" position="775,1075" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[=
-(text-colour:orange)[//A couple weeks after weaponization of the drones...//] &lt;!--Add CSS for fade in--&gt;
+[//A couple weeks after weaponization of the drones...//] &lt;!--Add CSS fade-in class--&gt;
 (after:6s)[(go-to: &quot;Bad Ending&quot;)]</tw-passagedata><tw-passagedata pid="17" name="Bad Ending" tags="" position="775,1200" size="100,100">This is the bad ending!</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
