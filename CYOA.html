@@ -21,6 +21,10 @@ You can either [[take the job]] or [[research the position]].</tw-passagedata><t
 After about 8 months of monotenous SQL work, you are promoted to real software development. In order to take the promotion, you must sign a non-disclosure agreement. The company can&#39;t tell you much until you sign the agreement. (if: (history: where (passage:)&#39;s tags contains &quot;research&quot;)&#39;s length &gt;= 1)[With your prior research, you know this is likely related to a government contract, and you are hesitant to take the position. You know the ethics of contracted out surveillance is sketchy. 
 
 [[Keep your monotenous SQL querying job]].]
+
+[[View Debug History|Debug History]]
+
+
 [[Take the promotion]].</tw-passagedata><tw-passagedata pid="3" name="research the position" tags="" position="675,450" size="100,100">When searching the web for Atlas&#39; past, you find two main articles:
 * [[Wikipedia]] - Atlas Cybersecurity
 * [[Vox]] - Atlas: The Imact of Survellience on Society
@@ -38,7 +42,18 @@ The article also covers a dataleak from 2011, where footage, personal files, and
 
 Later on, while passing the stage to get your degree, you reflect on the importance of research, and are thankful you did the right thing, rather than whatever would help yourself the most. 
 
-(text-colour:red)[The End.]</tw-passagedata><tw-passagedata pid="7" name="Keep your monotenous SQL querying job" tags="" position="925,575" size="100,100"></tw-passagedata><tw-passagedata pid="8" name="Take the promotion" tags="" position="1050,575" size="100,100"></tw-passagedata></tw-storydata>
+(text-colour:red)[The End.]</tw-passagedata><tw-passagedata pid="7" name="Take the promotion" tags="" position="1050,575" size="100,100"></tw-passagedata><tw-passagedata pid="8" name="Debug History" tags="" position="925,700" size="100,100">:: Debug History
+Here is your visit history:
+
+&lt;!-- Iterate through the history and display passage titles and tags --&gt;
+{
+(set: $history to (history:))
+(for: each _entry, ...$history)[
+- Passage: (print: (passage: _entry)&#39;s name), Tags: (print: (passage: _entry)&#39;s tags)
+]
+}
+
+[[Back to Promotion Decision|take the job]]</tw-passagedata><tw-passagedata pid="9" name="Keep your monotenous SQL querying job" tags="" position="925,575" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
