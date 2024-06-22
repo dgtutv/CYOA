@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play CYOA.</tw-noscript></noscript></tw-story>
-<tw-storydata name="CYOA" startnode="1" creator="Twine" creator-version="2.9.0" format="Harlowe" format-version="3.3.9" ifid="9DEEF0FD-0A52-4A92-959E-B16CF06CE44E" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.fade-in{
+<tw-storydata name="CYOA" startnode="15" creator="Twine" creator-version="2.9.0" format="Harlowe" format-version="3.3.9" ifid="9DEEF0FD-0A52-4A92-959E-B16CF06CE44E" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.fade-in{
   /*visibility: hidden;
   animation: fadeIn 4s forwards;*/
   color: red;
@@ -22,77 +22,100 @@
     visibility: visible;
     font-size: 2rem;
   }
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="800,325" size="100,100">You&#39;re a computer science student at Simon Fraser University, and after months of applying for internships, you finally get a job offer:
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="800,300" size="100,100">You&#39;re a computer science student at Simon Fraser University, and after months of applying for internships, you finally get a job offer! You have been offered a position as a software engineer at Atlas, a security company that specializes in surveillance software for cameras. 
 
-&#39;&#39;Software Developer at Atlas&#39;&#39;
+The company prides itself in helping the public stay safe and providing innovative technology through their surveillance solutions to tackle and prevent crime. Atlas&#39; clients range from well-known institutions to independent businesses, offering personalized software for whatever their clients may need.
+
+&lt;!--&#39;&#39;Software Developer at Atlas&#39;&#39;
 * Developing survellience software
 * Database managment and design
-* Pays $78,354 per year
+* Pays $78,354 per year--&gt;
 
-You can either [[take the job]] or [[research the position]].</tw-passagedata><tw-passagedata pid="2" name="take the job" tags="" position="925,450" size="100,100">You take the position.
+You can either [[take the job]] or [[research the position]].</tw-passagedata><tw-passagedata pid="2" name="take the job" tags="" position="875,450" size="100,100">You take the position.
 
-After about 8 months of monotenous SQL work, you are promoted to real software development. In order to take the promotion, you must sign a non-disclosure agreement. The company can&#39;t tell you much until you sign the agreement.
+Over the course of your first week, you go through orientation and meet your coworkers. The company culture seems pretty welcoming and friendly, with plenty of ways to destress or relax at work.
 
-(if:(history: where its name contains &quot;Wikipedia&quot;)&#39;s length &gt;= 1 or (history: where its name contains &quot;Vox&quot;)&#39;s length &gt;= 1 )[With your prior research, you know this is likely related to a government contract, and you are hesitant to take the position. You know the ethics of contracted out surveillance is sketchy. 
+As an intern, you are assigned to database management, working with simple but boring SQL querying. You work with a database assigned to a small business using Atlas&#39; surveillance software with their CCTV cameras set up around their warehouses and offices. (if:(history: where its name contains &quot;Wikipedia - Atlas Cybersecurity&quot;)&#39;s length &gt;= 1 or (history: where its name contains &quot;Vox - Atlas: The Impact of Surveillance on Society&quot;)&#39;s length &gt;= 1 )[The data was nothing notable and the software was working to protect the business&#39; assets, working as any other surveillance software.]
 
-[[Keep your monotenous SQL querying job]].]
+After a few months of monotonous SQL work, you are offered a promotion into the Surveillance Systems department to finally work with the software team. 
 
+In order to take the promotion, you must sign a non-disclosure agreement. Your supervisor is unable to share much information about the new position and will not tell you much until you sign the agreement.
 
-[[Take the promotion]].</tw-passagedata><tw-passagedata pid="3" name="research the position" tags="" position="675,450" size="100,100">When searching the web for Atlas&#39; past, you find two main articles:
-* [[Wikipedia]] - Atlas Cybersecurity
-* [[Vox]] - Atlas: The Imact of Survellience on Society
+(if:(history: where its name contains &quot;Wikipedia - Atlas Cybersecurity&quot;)&#39;s length &gt;= 1 or (history: where its name contains &quot;Vox - Atlas: The Impact of Surveillance on Society&quot;)&#39;s length &gt;= 1 )[With your prior research, you know this is likely related to a government contract and you are hesitant to take the position. You know the ethics of contracted out surveillance is sketchy. 
 
-After inspecting the pages, you decide to either [[take the job]] or [[decline the offer]].</tw-passagedata><tw-passagedata pid="4" name="Wikipedia" tags="research" position="675,575" size="100,100">After reading through the extensive site, you conclude the following:
+[[Keep your monotonous SQL querying job]].]
+
+[[Take the promotion]].</tw-passagedata><tw-passagedata pid="3" name="research the position" tags="" position="600,375" size="100,100">Knowing better than to foolishly accept the offer, you decide to conduct some research on the company before making a decision. Perhaps a news article or website may shed some information about the company the job description decided to leave out.
+
+When searching the web for Atlas&#39; past, you find two main articles:
+
+* Read: [[Wikipedia - Atlas Cybersecurity]]
+* Read: [[Vox - Atlas: The Impact of Surveillance on Society]]
+
+After inspecting the pages, you decide to either [[take the job]] or [[decline the offer]].</tw-passagedata><tw-passagedata pid="4" name="Wikipedia - Atlas Cybersecurity" tags="research" position="525,525" size="100,100">As Wikipedia is known to do, the site gives a rundown on the history of Atlas and what the company does, along with any basic information one may want to know about the company.
+
+After reading through the extensive site, you conclude the following:
+
 * Atlas employees are generally well treated, and interns often get considered for rehiring.
 * Atlas&#39; work includes civillian survelience, which the public finds controversial.
 * The company has many government contracts, but the details are kept secret.
 
-[[Return to search results -&gt;research the position]] </tw-passagedata><tw-passagedata pid="5" name="Vox" tags="research" position="800,575" size="100,100">The Vox article is heavily against survellience, it talks about how survellence can evolve into control, and how independent companies should not be contracted for government work.
+[[Return to search results -&gt;research the position]] </tw-passagedata><tw-passagedata pid="5" name="Vox - Atlas: The Impact of Surveillance on Society" tags="research" position="675,525" size="100,100">The Vox article puts Atlas in a more negative view, discussing how it&#39;s role in surveillance of the public brings about issues, how surveillance can evolve into control, and why independent companies should not be contracted for government work.
 
-The article also covers a dataleak from 2011, where footage, personal files, and employee SIN numbers were leaked via a SQL injection attack.
+The article also covers a dataleak from 2011, where footage, personal files, and employee SIN numbers were leaked via a SQL injection attack. Some of the data showed an increase in Atlas&#39; technology within government institutions such as with police.
 
-[[Return to search results -&gt;research the position]] </tw-passagedata><tw-passagedata pid="6" name="decline the offer" tags="" position="550,575" size="100,100">You decline the offer. Over the next year you get no more job offers, and are on your way to graduation. While driving, you hear over the radio; &quot;Atlas responsible for 35 deaths of minorities who were being tracked at a party by military drone. Many at the party were under the influence of drugs and alcohol, and one man tried to strike the drone. The drone, taking this as an act of agression, tear gassed the individual. Upon the assult of the individual, the others at the party started trying to help and also got gassed. The situation quickly became aggressive, and the AI aboard the drone assesed the situation as a terrorism attack, shooting and killing all but one individual who was at the party&quot;.
+[[Return to search results -&gt;research the position]] </tw-passagedata><tw-passagedata pid="6" name="decline the offer" tags="" position="425,375" size="100,100">You decline the offer. Over the next year, you get no more job offers and are on your way to graduation. 
 
 Later on, while passing the stage to get your degree, you reflect on the importance of research, and are thankful you did the right thing, rather than whatever would help yourself the most. 
 
-(text-colour:red)[The End.]</tw-passagedata><tw-passagedata pid="7" name="Take the promotion" tags="" position="1050,575" size="100,100">You accept your new position and immediately start work on military drones. You combine LLM&#39;s and Computer Vision to create a system that can detect malicous behaviour and make police reports. The drones themselves just contain cameras.
+(text-colour:red)[The End.]</tw-passagedata><tw-passagedata pid="7" name="Take the promotion" tags="" position="1050,575" size="100,100">You accept the promotion
 
-[[Next-&gt;LLM training]]</tw-passagedata><tw-passagedata pid="8" name="Keep your monotenous SQL querying job" tags="" position="925,575" size="100,100"></tw-passagedata><tw-passagedata pid="9" name="LLM training" tags="" position="1050,700" size="100,100">Now you&#39;ve set up your models, you must train them. You are provided with a database of criminals by the police, so that you can catch escaped criminals, and hold higher suspicon of prior offenders. The only issue is that the database, being based on outdated (racist) data, finds a higher percentage of minorities than what is found in the population. You are concerned that the pattern-finding nature of your AI model will cause discrimination towards minorities within the drone. You&#39;re left with a difficult choice:
+You are transferred and debriefed on your new position within Surveillance Systems. You will be working and supporting the team with their new contract with the state police, developing a software solution that uses the police database and training an in-house AI model on the database. The software will use the AI to scan people wherever the cameras are used and report back to the police, notifying them on any suspicious activity.
+
+[[Next-&gt;AI training]]</tw-passagedata><tw-passagedata pid="8" name="AI training" tags="" position="1050,700" size="100,100">Working with a small team you have been assigned with, you get to training the AI.
+
+The extensive database given by the police is filled with the data and images of various offenders the police has recorded over the years. The AI will use the given data and images to create a way for police cameras to identify criminals and possibly prevent crimes from happening.
+
+While this idea may seem like a noble goal and helpful for the public, you are concerned that the pattern-finding nature of your AI model will cause discrimination towards minorities due to the records within the database and the widespread use of secret public surveillance was just a concerning issue as well. 
+
+You&#39;re left with a difficult choice:
 
 [[Bring the issue up with your boss]]
 [[Discuss the issue with co-workers]]
-[[Stay quiet and keep coding]]</tw-passagedata><tw-passagedata pid="10" name="Discuss the issue with co-workers" tags="" position="1300,825" size="100,100">You plan a huge meeting with all the other employees working on the same project as you (other than the bosses). You find that your co-workers have also witnessed the same neglectful nature, and they are also concerned about potential discrimination within all survellence systems provided by Atlas.
+[[Stay quiet and keep coding]]</tw-passagedata><tw-passagedata pid="9" name="Discuss the issue with co-workers" tags="" position="1300,825" size="100,100">You decide to talk with your coworkers.
 
-The group starts discussing protest, and revealing information about the company. Although you believe in the cause, you don&#39;t want to stir up too much drama with your first job, and you are concerned about the legal reprocussions of breaking your NDA. 
+During lunch later that day, you approach one of the coworkers who seemed trustworthy enough to talk this with. You bring up the ethical concerns you had with the software. To your surprise, they agreed with you, voicing their own worries.
 
-You are left with only three choices at this time:
+After a small chat, it seems like there were a few other coworkers who also were against the idea of contributing themselves to a harmful system. You formed a small group and, over the course of the week, decided to discuss on a plan of action. The group came up with these choices, each person allowed to do whatever they chose without judgement from the others.
+
+The three choices:
+
 [[Quit the job and stay quiet]]
 [[Break NDA and protest]]
-[[Stay quiet and keep coding]] </tw-passagedata><tw-passagedata pid="11" name="Stay quiet and keep coding" tags="" position="775,825" size="100,100">You decide to stay quiet and continue working on the project. 
+[[Stay quiet and keep coding]] </tw-passagedata><tw-passagedata pid="10" name="Stay quiet and keep coding" tags="" position="775,825" size="100,100">(if: (history: where its name contains &quot;Bring the issue up with your boss&quot;)&#39;s length &gt;= 1)[Heeding the words of the department head, you decide to stay quiet and keep working on the software, hoping the issues would not come true.]
 
-After months of working on your AI model, the drones are released to the public, and are used as police survellience across the country.
+(if: (history: where its name contains &quot;AI training&quot;)&#39;s length &gt;= 1)[You decide to keep quiet and continue working.]</tw-passagedata><tw-passagedata pid="11" name="Bring the issue up with your boss" tags="" position="1050,875" size="100,100">You decide to talk with the Surveillance Systems department head.
 
-After a year of apparent success in Canada, multiple other governments from across the globe sign with Atlas and the drones enter mass production.
+You set up a meeting with your boss, and discuss the concerns you had with the software. Your boss, stressed and pressured to release the product as soon as possible, considers the issue, but quickly shuts you down.
 
-Although most public information about the drones is positive, there are many news outlets that have been pushed to the bottom of search results. These articles discuss the suspected discrimination of the new drones, but the articles are somewhat censored via bill C-11. Other governments are not yet aware of this issue.
+&#39;&#39;&quot;We already signed the contract and are being paid to work with our client. Just do your job and any issues can be dealt with later. Remember you accepted this oppurtunity to be in this department and so now just do your job as you&#39;ve been told to do. Don&#39;t bring this up with anyone else or you&#39;ll suffer the consequences!&quot;&#39;&#39;
 
-[[Continue -&gt; Weaponization of the drones]]</tw-passagedata><tw-passagedata pid="12" name="Bring the issue up with your boss" tags="" position="1050,825" size="100,100">You attend a meeting with your boss, and discuss the possibility of discrimination within the drones due to an outdated database. Your boss, stressed and pressured to release the product as soon as possible, considers the issue, but quickly shuts you down.
-&#39;&#39;You should appreciate the opportunity we have provided you, rather than stirring up problems in the workplace. Keep quiet and keep coding, or get fired!&#39;&#39;
-
-This response is confusing and the language spoke towards you is upsetting. With rage fuelling inside of you, and a willingness to improve the world, you are left with two choices.
+Your boss was firm and stern with their response, unwilling to budge or consider anything else. You leave the meeting upset, unsure what to do and demoralized. Some coworkers glanced up at you from their desks, almost as if they had heard the conversation...
 
 [[Discuss the issue with co-workers]] 
-[[Stay quiet and keep coding]] </tw-passagedata><tw-passagedata pid="13" name="Quit the job and stay quiet" tags="" position="1425,975" size="100,100"></tw-passagedata><tw-passagedata pid="14" name="Break NDA and protest" tags="" position="1250,975" size="100,100"></tw-passagedata><tw-passagedata pid="15" name=" Weaponization of the drones" tags="" position="775,950" size="100,100">With the apparent large success of the drones world-wide, and terrorism rates increasing, many governments weaponize the drones to counteract attacks.
+[[Stay quiet and keep coding]] </tw-passagedata><tw-passagedata pid="12" name="Break NDA and protest" tags="" position="1250,975" size="100,100"></tw-passagedata><tw-passagedata pid="13" name="Continue your work" tags="" position="775,1000" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[=
+&lt;span class=&quot;fade-in&quot;&gt;//test words...//&lt;/span&gt;
+(after:4s)[(go-to: &quot;Bad Ending&quot;)]</tw-passagedata><tw-passagedata pid="14" name="Bad Ending" tags="" position="775,1125" size="100,100">This is the bad ending!</tw-passagedata><tw-passagedata pid="15" name="Prelude" tags="" position="800,150" size="100,100">This &quot;Choose Your Own Adventure&quot; story is based on the case study, &quot;Automated Active Response Weaponry&quot;, by the ACM Comittee on Professional Ethics.
 
-The drones initially are just equipped with tear gas, acoustic weapons and pepper spray. However, over the next few months the drones are attacked by criminals, and lethal weapons are installed to protect the drones themselves, as well as the general population.
+Created by Daniel Todd, Fraser Wong, and Tallal Gohar.
 
-Protest starts to errupt among the company, as many employees suspect discrimination within the AI models, but you are the only person with access to the database. Therefore, you are the only person who can provide evidence for this.
+[[Start-&gt;Intro]]</tw-passagedata><tw-passagedata pid="16" name="Keep your monotonous SQL querying job" tags="" position="875,600" size="100,100">You decide to politely decline the promotion and stick to your SQL querying. 
 
-You start to become paranoid knowing the fundamental flaw in training data that will innevidably lead to innocent deaths. You&#39;ve gone too far and decide quitting is no longer an option, cutting down your options.
+Although it was disappointing you were not able to move up within your internship and do what you wanted to do, you felt it was a better option to stick with being bored than meddling with controversial government contracts. Your internship continued as a boring office job, working away at simplistic SQL queries, and before you knew it, the contract had reached its end.
 
-Do you [[Join the protesters -&gt;Break NDA and protest]]  or [[Continue your work]]?</tw-passagedata><tw-passagedata pid="16" name="Continue your work" tags="" position="775,1075" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[=
-&lt;span class=&quot;fade-in&quot;&gt;//A couple weeks after weaponization of the drones...//&lt;/span&gt;
-(after:4s)[(go-to: &quot;Bad Ending&quot;)]</tw-passagedata><tw-passagedata pid="17" name="Bad Ending" tags="" position="775,1200" size="100,100">This is the bad ending!</tw-passagedata></tw-storydata>
+While the job did not end up being as fulfilling and exciting as you had hoped for, you still walked away with experience for you to use in the future.
+
+(text-colour:red)[The End.]</tw-passagedata><tw-passagedata pid="17" name="GAME OVER" tags="" position="1000,1225" size="200,100">&lt;!--This will have the game stats, giving a rundown of the outcome the player got and what choices they followed to get the outcome.--&gt;</tw-passagedata><tw-passagedata pid="18" name="Quit the job and stay quiet" tags="" position="1425,950" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
