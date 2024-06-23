@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play CYOA.</tw-noscript></noscript></tw-story>
-<tw-storydata name="CYOA" startnode="15" creator="Twine" creator-version="2.9.0" format="Harlowe" format-version="3.3.9" ifid="9DEEF0FD-0A52-4A92-959E-B16CF06CE44E" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.fade-in{
+<tw-storydata name="CYOA" startnode="15" creator="Twine" creator-version="2.9.0" format="Harlowe" format-version="3.3.9" ifid="9DEEF0FD-0A52-4A92-959E-B16CF06CE44E" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.fade-in{
   /*visibility: hidden;
   animation: fadeIn 4s forwards;*/
   color: red;
@@ -68,7 +68,7 @@ The article also covers a dataleak from 2011, where footage, personal files, and
 
 Later on, while passing the stage to get your degree, you reflect on the importance of research, and are thankful you did the right thing, rather than whatever would help yourself the most. 
 
-(text-colour:red)[The End.]</tw-passagedata><tw-passagedata pid="7" name="Take the promotion" tags="" position="1050,575" size="100,100">You accept the promotion
+(text-colour:red)[[The End.-&gt;GAME OVER]]</tw-passagedata><tw-passagedata pid="7" name="Take the promotion" tags="" position="1050,575" size="100,100">You accept the promotion
 
 You are transferred and debriefed on your new position within Surveillance Systems. You will be working and supporting the team with their new contract with the state police, developing a software solution that uses the police database and training an in-house AI model on the database. The software will use the AI to scan people wherever the cameras are used and report back to the police, notifying them on any suspicious activity.
 
@@ -76,7 +76,7 @@ You are transferred and debriefed on your new position within Surveillance Syste
 
 The extensive database given by the police is filled with the data and images of various offenders the police has recorded over the years. The AI will use the given data and images to create a way for police cameras to identify criminals and possibly prevent crimes from happening.
 
-While this idea may seem like a noble goal and helpful for the public, you are concerned that the pattern-finding nature of your AI model will cause discrimination towards minorities due to the records within the database and the widespread use of secret public surveillance was just a concerning issue as well. 
+While this idea may seem like a noble goal and helpful for the public, you are concerned that the pattern-finding nature of your AI model will cause discrimination towards minorities due to the records within the database and the widespread use of secret public surveillance was a concerning issue as well. 
 
 You&#39;re left with a difficult choice:
 
@@ -86,19 +86,21 @@ You&#39;re left with a difficult choice:
 
 During lunch later that day, you approach one of the coworkers who seemed trustworthy enough to talk this with. You bring up the ethical concerns you had with the software. To your surprise, they agreed with you, voicing their own worries.
 
-After a small chat, it seems like there were a few other coworkers who also were against the idea of contributing themselves to a harmful system. You formed a small group and, over the course of the week, decided to discuss on a plan of action. The group came up with these choices, each person allowed to do whatever they chose without judgement from the others.
+After a small chat, it seems like there were a few other coworkers who also were against the idea of contributing themselves to a harmful system. You formed a small group and, over the course of the week, decided to discuss on a plan of action. The group came up with three choices, each person allowed to do whatever they chose without judgement from the others.
 
 The three choices:
 
-[[Quit the job and stay quiet]]
+[[Quit the job but stay quiet about the issues]]
 [[Break NDA and protest]]
-[[Stay quiet and keep coding]] </tw-passagedata><tw-passagedata pid="10" name="Stay quiet and keep coding" tags="" position="775,825" size="100,100">(if: (history: where its name contains &quot;Bring the issue up with your boss&quot;)&#39;s length &gt;= 1)[Heeding the words of the department head, you decide to stay quiet and keep working on the software, hoping the issues would not come true.]
+[[Continue and stay on the project-&gt;Stay quiet and keep coding]]</tw-passagedata><tw-passagedata pid="10" name="Stay quiet and keep coding" tags="" position="775,825" size="100,100">(if: (history: where its name contains &quot;Bring the issue up with your boss&quot;)&#39;s length &gt;= 1)[Heeding the words of the department head, you decide to stay quiet and keep working on the software, hoping the issues would not come true.]
 
 (if: (history: where its name contains &quot;AI training&quot;)&#39;s length &gt;= 1)[You decide to keep quiet and continue working.]
 
+(if: (history: where its name contains &quot;Discuss the issue with co-workers&quot;)&#39;s length &gt;= 1)[After discussions with the other team members, you decided it was better to just continue working on the project, leaving the ethics for others to worry about.]
+
 After a few months, development of the AI model is complete and ready to deploy. A press conference announcing the new software is held in the police headquarters with members of the development team in attendance. One of the reporters questions the use of such invasive surveillence monitoring but is quickly shut down.
 
-After the conference ends, you begin thinking of the ethical issues you once had in the earlier stages of development. You are about to reach your car when suddenly the pestering reporter recognizes you as one of the members on stage. He asks you to share some details of the AI recognition sofware.
+After the conference ends, you begin thinking of the ethical issues you once had in the earlier stages of development. You are about to reach your car when suddenly the pestering reporter recognizes you as one of the members on stage. He asks you to share some details of the AI recognition software.
 
 [[Ignore him and drive away]]
 [[Set up a meeting with him the next day]]
@@ -111,7 +113,15 @@ You set up a meeting with your boss, and discuss the concerns you had with the s
 Your boss was firm and stern with their response, unwilling to budge or consider anything else. You leave the meeting upset, unsure what to do and demoralized. Some coworkers glanced up at you from their desks, almost as if they had heard the conversation...
 
 [[Discuss the issue with co-workers]] 
-[[Stay quiet and keep coding]] </tw-passagedata><tw-passagedata pid="12" name="Break NDA and protest" tags="" position="1250,975" size="100,100"></tw-passagedata><tw-passagedata pid="13" name="Continue your work" tags="" position="500,775" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[=
+[[Stay quiet and keep coding]] </tw-passagedata><tw-passagedata pid="12" name="Break NDA and protest" tags="" position="1250,975" size="100,100">Agreeing with some of the others, you decided what Atlas was doing was unethical and quit the project, planning to breach your contract and inform the public. Others either stayed and continued to work in the project, or quit but chose to stay quiet.
+
+You and the team handed in letters of resignation, claiming the unethical use of the software and refusing to be a part of it. Upper management was furious, losing a chunk of the team, forcing delays into development, and upsetting the police department. 
+
+It was not long before news broke out and your team shared the secret software being developed at Atlas across social media. Articles and stories of the group resignation being detailed across publications, while also including the ethical issues of police surveillance being enhanced by the AI software. 
+
+Atlas, of course, responded by suing your team but the public was already beginning to protest and boycott the company. Although this had caused more trouble for development, Atlas was able to complete production and deploy the software.
+
+[[Continue-&gt;Use of Software by Police]]</tw-passagedata><tw-passagedata pid="13" name="Continue your work" tags="" position="500,775" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[=
 &lt;span class=&quot;fade-in&quot;&gt;//test words...//&lt;/span&gt;
 (after:4s)[(go-to: &quot;Bad Ending&quot;)]</tw-passagedata><tw-passagedata pid="14" name="Bad Ending" tags="" position="550,1275" size="100,100">This is the bad ending!</tw-passagedata><tw-passagedata pid="15" name="Prelude" tags="" position="800,150" size="100,100">This &quot;Choose Your Own Adventure&quot; story is based on the case study, &quot;Automated Active Response Weaponry&quot;, by the ACM Comittee on Professional Ethics.
 
@@ -123,11 +133,39 @@ Although it was disappointing you were not able to move up within your internshi
 
 While the job did not end up being as fulfilling and exciting as you had hoped for, you still walked away with experience for you to use in the future.
 
-(text-colour:red)[The End.]</tw-passagedata><tw-passagedata pid="17" name="GAME OVER" tags="" position="925,1475" size="200,100">&lt;!--This will have the game stats, giving a rundown of the outcome the player got and what choices they followed to get the outcome.--&gt;</tw-passagedata><tw-passagedata pid="18" name="Quit the job and stay quiet" tags="" position="1425,950" size="100,100"></tw-passagedata><tw-passagedata pid="19" name="Ignore him and drive away" tags="" position="600,1000" size="100,100">After ignoring the reporter, you stop worrying about the potential issues and go on with you day. Your team begins the maintenance and support part of the project and you forget about the problem. A few weeks later, a news story breaks out that the police misidentified and arrested a non-suspect. The team quickly looks at the software and finds a bug that caused 200% more positive hits. An emergency meeting is held with members of the company to discuss what to do next. They eventually ask you for your opinion. 
+(text-colour:red)[[The End.-&gt;GAME OVER]]</tw-passagedata><tw-passagedata pid="17" name="GAME OVER" tags="" position="1500,350" size="200,100">&lt;!--This will have the game stats, giving a rundown of the outcome the player got and what choices they followed to get the outcome.--&gt;
+
+Thank you for playing!
+
+Your choices throughout the game:
+
+(if:(history: where its name contains &quot;research the position&quot;)&#39;s length &gt;= 1)[You researched the job.]
+
+(if:(history: where its name contains &quot;decline the offer&quot;)&#39;s length &gt;= 1)[You declined the internship.]
+
+(if:(history: where its name contains &quot;take the job&quot;)&#39;s length &gt;= 1)[You accepted the job.]
+
+(if:(history: where its name contains &quot;Keep your monotonous SQL querying job&quot;)&#39;s length &gt;= 1)[You did not accept the promotion.]
+
+(if:(history: where its name contains &quot;Take the promotion&quot;)&#39;s length &gt;= 1)[You accepted the promotion.]
+
+(if:(history: where its name contains &quot;Stay quiet and keep coding&quot;)&#39;s length &gt;= 1)[You stayed quiet about the ethical issues.]
+
+(if:(history: where its name contains &quot;Discuss the issue with co-workers&quot;)&#39;s length &gt;= 1)[You discussed the ethical concerns with other team members.]
+
+(if:(history: where its name contains &quot;Quit the job but stay quiet about the issues&quot;)&#39;s length &gt;= 1)[You decided to quit, but not whistleblow.]
+
+(if:(history: where its name contains &quot;Break NDA and protest&quot;)&#39;s length &gt;= 1)[You joined others and decided to protest against Atlas.]</tw-passagedata><tw-passagedata pid="18" name="Ignore him and drive away" tags="" position="600,1000" size="100,100">After ignoring the reporter, you stop worrying about the potential issues and go on with your day. Your team begins the maintenance and support part of the project. A few weeks later, a news story breaks out that the police misidentified and arrested a non-suspect. The team quickly looks at the software and finds a bug that caused 200% more positive hits. An emergency meeting is held with members of the company to discuss what to do next. They eventually ask you for your opinion. 
 
 [[Advocate for telling the truth]]
 [[Cover up the mistake and deny any wrong-doing]]
-</tw-passagedata><tw-passagedata pid="20" name="Set up a meeting with him the next day" tags="" position="975,1000" size="100,100"></tw-passagedata><tw-passagedata pid="21" name="Share your opinions of the software on the spot" tags="" position="800,1000" size="100,100"></tw-passagedata><tw-passagedata pid="22" name="Advocate for telling the truth" tags="" position="600,1125" size="100,100"></tw-passagedata><tw-passagedata pid="23" name="Cover up the mistake and deny any wrong-doing" tags="" position="475,1125" size="100,100">[[Bad Ending]] </tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="19" name="Set up a meeting with him the next day" tags="" position="975,1000" size="100,100"></tw-passagedata><tw-passagedata pid="20" name="Share your opinions of the software on the spot" tags="" position="800,1000" size="100,100"></tw-passagedata><tw-passagedata pid="21" name="Advocate for telling the truth" tags="" position="600,1125" size="100,100"></tw-passagedata><tw-passagedata pid="22" name="Cover up the mistake and deny any wrong-doing" tags="" position="475,1125" size="100,100">[[Bad Ending]] </tw-passagedata><tw-passagedata pid="23" name="Quit the job but stay quiet about the issues" tags="" position="1425,975" size="100,100">While some of the team were vocal about leaving the project and sharing information with the public, you decided to just quietly resign and stay in terms of the NDA.
+
+You were out of the Atlas internship and back to your usual studies. Over the next few months, you read an article of a small team of engineers at Atlas sharing information about the proposed software to various news publications. The news spread quickly through social media. People began to put pressure on the state police and Atlas, protesting the development and hoping to shut it down.
+
+Atlas retaliated by firing and suing the engineers for breaching of their contract. Despite the backlash from the public, Atlas continued development and were able to deploy the software for the police to use with their cameras. Eventually, you drifted away from the media coverage and focused on continuing your life.
+
+(text-colour:red)[[The End.-&gt;GAME OVER]]</tw-passagedata><tw-passagedata pid="24" name="Use of Software by Police" tags="" position="1250,1100" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
