@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play CYOA.</tw-noscript></noscript></tw-story>
-<tw-storydata name="CYOA" startnode="15" creator="Twine" creator-version="2.9.0" format="Harlowe" format-version="3.3.9" ifid="9DEEF0FD-0A52-4A92-959E-B16CF06CE44E" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.fade-in{
+<tw-storydata name="CYOA" startnode="14" creator="Twine" creator-version="2.9.0" format="Harlowe" format-version="3.3.9" ifid="9DEEF0FD-0A52-4A92-959E-B16CF06CE44E" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.fade-in{
   /*visibility: hidden;
   animation: fadeIn 4s forwards;*/
   color: red;
@@ -86,7 +86,7 @@ You&#39;re left with a difficult choice:
 
 During lunch later that day, you approach one of the coworkers who seemed trustworthy enough to talk this with. You bring up the ethical concerns you had with the software. To your surprise, they agreed with you, voicing their own worries.
 
-After a small chat, it seems like there were a few other coworkers who also were against the idea of contributing themselves to a harmful system. You formed a small group and, over the course of the week, decided to discuss on a plan of action. The group came up with three choices, each person allowed to do whatever they chose without judgement from the others.
+After a small chat, it seems like there were a few other coworkers who also were against the idea of contributing themselves to a harmful system. You formed a small group and, over the course of the week, decided to discuss on a plan of action. Being assigned as the leader, you and your team came up with three choices.
 
 The three choices:
 
@@ -98,7 +98,7 @@ The three choices:
 
 (if: (history: where its name contains &quot;Discuss the issue with co-workers&quot;)&#39;s length &gt;= 1)[After discussions with the other team members, you decided it was better to just continue working on the project, leaving the ethics for others to worry about.]
 
-After a few months, development of the AI model is complete and ready to deploy. A press conference announcing the new software is held in the police headquarters with members of the development team in attendance. One of the reporters questions the use of such invasive surveillence monitoring but is quickly shut down.
+After a few months, development of the AI model is complete and ready to deploy. A press conference announcing the new software is held in the police headquarters with members of the development team in attendance. One of the reporters questions the use of such invasive surveillance monitoring but is quickly shut down.
 
 After the conference ends, you begin thinking of the ethical issues you once had in the earlier stages of development. You are about to reach your car when suddenly the pestering reporter recognizes you as one of the members on stage. He asks you to share some details of the AI recognition software.
 
@@ -119,21 +119,21 @@ You and the team handed in letters of resignation, claiming the unethical use of
 
 It was not long before news broke out and your team shared the secret software being developed at Atlas across social media. Articles and stories of the group resignation being detailed across publications, while also including the ethical issues of police surveillance being enhanced by the AI software. 
 
-Atlas, of course, responded by suing your team but the public was already beginning to protest and boycott the company. Although this had caused more trouble for development, Atlas was able to complete production and deploy the software.
+Atlas, of course, responded by suing your team but the public was already beginning to protest and boycott the company. Public perception of the company was greatly affected, any goodwill Atlas had gained through their security software quickly being burned. As Atlas saw their revenue and stocks dip down as protests continued, shareholders urged Atlas management to respond.
 
-[[Continue-&gt;Use of Software by Police]]</tw-passagedata><tw-passagedata pid="13" name="Continue your work" tags="" position="500,775" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[=
+[[Continue-&gt;Atlas Backing Down]]</tw-passagedata><tw-passagedata pid="13" name="Continue your work" tags="" position="500,775" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[=
 &lt;span class=&quot;fade-in&quot;&gt;//test words...//&lt;/span&gt;
-(after:4s)[(go-to: &quot;Bad Ending&quot;)]</tw-passagedata><tw-passagedata pid="14" name="Bad Ending" tags="" position="550,1275" size="100,100">This is the bad ending!</tw-passagedata><tw-passagedata pid="15" name="Prelude" tags="" position="800,150" size="100,100">This &quot;Choose Your Own Adventure&quot; story is based on the case study, &quot;Automated Active Response Weaponry&quot;, by the ACM Comittee on Professional Ethics.
+(after:4s)[(go-to: &quot;Bad Ending&quot;)]</tw-passagedata><tw-passagedata pid="14" name="Prelude" tags="" position="800,150" size="100,100">This &quot;Choose Your Own Adventure&quot; story is based on the case study, &quot;Automated Active Response Weaponry&quot;, by the ACM Comittee on Professional Ethics.
 
 Created by Daniel Todd, Fraser Wong, and Tallal Gohar.
 
-[[Start-&gt;Intro]]</tw-passagedata><tw-passagedata pid="16" name="Keep your monotonous SQL querying job" tags="" position="875,600" size="100,100">You decide to politely decline the promotion and stick to your SQL querying. 
+[[Start-&gt;Intro]]</tw-passagedata><tw-passagedata pid="15" name="Keep your monotonous SQL querying job" tags="" position="875,600" size="100,100">You decide to politely decline the promotion and stick to your SQL querying. 
 
 Although it was disappointing you were not able to move up within your internship and do what you wanted to do, you felt it was a better option to stick with being bored than meddling with controversial government contracts. Your internship continued as a boring office job, working away at simplistic SQL queries, and before you knew it, the contract had reached its end.
 
 While the job did not end up being as fulfilling and exciting as you had hoped for, you still walked away with experience for you to use in the future.
 
-(text-colour:red)[[The End.-&gt;GAME OVER]]</tw-passagedata><tw-passagedata pid="17" name="GAME OVER" tags="" position="1500,350" size="200,100">&lt;!--This will have the game stats, giving a rundown of the outcome the player got and what choices they followed to get the outcome.--&gt;
+(text-colour:red)[[The End.-&gt;GAME OVER]]</tw-passagedata><tw-passagedata pid="16" name="GAME OVER" tags="" position="1500,350" size="200,100">&lt;!--This will have the game stats, giving a rundown of the outcome the player got and what choices they followed to get the outcome.--&gt;
 
 Thank you for playing!
 
@@ -155,17 +155,31 @@ Your choices throughout the game:
 
 (if:(history: where its name contains &quot;Quit the job but stay quiet about the issues&quot;)&#39;s length &gt;= 1)[You decided to quit, but not whistleblow.]
 
-(if:(history: where its name contains &quot;Break NDA and protest&quot;)&#39;s length &gt;= 1)[You joined others and decided to protest against Atlas.]</tw-passagedata><tw-passagedata pid="18" name="Ignore him and drive away" tags="" position="600,1000" size="100,100">After ignoring the reporter, you stop worrying about the potential issues and go on with your day. Your team begins the maintenance and support part of the project. A few weeks later, a news story breaks out that the police misidentified and arrested a non-suspect. The team quickly looks at the software and finds a bug that caused 200% more positive hits. An emergency meeting is held with members of the company to discuss what to do next. They eventually ask you for your opinion. 
+(if:(history: where its name contains &quot;Break NDA and protest&quot;)&#39;s length &gt;= 1)[You joined others and decided to protest against Atlas.]</tw-passagedata><tw-passagedata pid="17" name="Ignore him and drive away" tags="" position="600,1000" size="100,100">After ignoring the reporter, you stop worrying about the potential issues and go on with your day. 
 
-[[Advocate for telling the truth]]
-[[Cover up the mistake and deny any wrong-doing]]
-</tw-passagedata><tw-passagedata pid="19" name="Set up a meeting with him the next day" tags="" position="975,1000" size="100,100"></tw-passagedata><tw-passagedata pid="20" name="Share your opinions of the software on the spot" tags="" position="800,1000" size="100,100"></tw-passagedata><tw-passagedata pid="21" name="Advocate for telling the truth" tags="" position="600,1125" size="100,100"></tw-passagedata><tw-passagedata pid="22" name="Cover up the mistake and deny any wrong-doing" tags="" position="475,1125" size="100,100">[[Bad Ending]] </tw-passagedata><tw-passagedata pid="23" name="Quit the job but stay quiet about the issues" tags="" position="1425,975" size="100,100">While some of the team were vocal about leaving the project and sharing information with the public, you decided to just quietly resign and stay in terms of the NDA.
+Your team had begun the maintenance and support part of the project, monitoring the system. A few weeks later, a news story breaks out that the police misidentified and arrested a non-suspect. 
 
-You were out of the Atlas internship and back to your usual studies. Over the next few months, you read an article of a small team of engineers at Atlas sharing information about the proposed software to various news publications. The news spread quickly through social media. People began to put pressure on the state police and Atlas, protesting the development and hoping to shut it down.
+The team quickly analyzes the software and realize the problem. The AI was having trouble accurately detecting faces, merging and trying its best to fit a description given from the database. An emergency meeting is held with members of the company to discuss what to do next. Many of the developers were concerned and wanted the issue to be fixed.
 
-Atlas retaliated by firing and suing the engineers for breaching of their contract. Despite the backlash from the public, Atlas continued development and were able to deploy the software for the police to use with their cameras. Eventually, you drifted away from the media coverage and focused on continuing your life.
+&lt;!--[[Advocate for telling the truth]]
+[[Cover up the mistake and deny any wrong-doing]]--&gt;
 
-(text-colour:red)[[The End.-&gt;GAME OVER]]</tw-passagedata><tw-passagedata pid="24" name="Use of Software by Police" tags="" position="1250,1100" size="100,100"></tw-passagedata></tw-storydata>
+[[Continue-&gt;Management ignores concerns and continues]]
+</tw-passagedata><tw-passagedata pid="18" name="Set up a meeting with him the next day" tags="" position="975,1000" size="100,100"></tw-passagedata><tw-passagedata pid="19" name="Share your opinions of the software on the spot" tags="" position="800,1000" size="100,100"></tw-passagedata><tw-passagedata pid="20" name="Advocate for telling the truth" tags="" position="325,1000" size="100,100"></tw-passagedata><tw-passagedata pid="21" name="Cover up the mistake and deny any wrong-doing" tags="" position="475,1125" size="100,100"></tw-passagedata><tw-passagedata pid="22" name="Quit the job but stay quiet about the issues" tags="" position="1425,975" size="100,100">While some of the team were vocal about leaving the project and sharing information with the public, you decided the team should quietly resign and stay in terms of the NDA.
+
+You were out of the Atlas internship and back to your usual studies. Management was upset by the number of people seemingly quiting the project and the company out of nowhere, needing to delay the project and invest more money in order to get it back on track.
+
+Atlas eventually continued development and were able to deploy the software for the police to use with their cameras. Weeks after deployment, you saw news stories and social media posts emerging with accounts of increased false arrests and targetted harassment of minorities by the police. Despite this, police were adamant to increasing the use of the software and installing more surveillance hardware wherever they could.
+
+The ethical issues and concerns you had with the software seemed to have come true. You decided it was best to not mention your internship at Atlas anymore and hope the issues would be resolved in the near future.
+
+(text-colour:red)[[The End.-&gt;GAME OVER]]</tw-passagedata><tw-passagedata pid="23" name="Atlas Backing Down" tags="" position="1125,1100" size="100,100">Thanks to you and your team revealing the truth and giving the world the information of Atlas&#39; development of AI surveillance software, Atlas decided to shut the project down. While the state police were frustrated by this decision, Atlas prioritized the loss of income and goodwill over their client. 
+
+Of course, the lawsuit against you was still ongoing and Atlas were not going to waive it off. It was going to be a long and painful process over the coming months, but knowing you were able to stop the project from being deployed was something you were proud of. 
+
+The public hailed you and your group as heroes, showing their support for you wherever they could.
+
+(text-color:red)[[The End-&gt;GAME OVER]])</tw-passagedata><tw-passagedata pid="24" name="Management ignores concerns and continues" tags="" position="725,1125" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
