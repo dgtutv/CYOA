@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play CYOA.</tw-noscript></noscript></tw-story>
-<tw-storydata name="CYOA" startnode="14" creator="Twine" creator-version="2.9.0" format="Harlowe" format-version="3.3.9" ifid="9DEEF0FD-0A52-4A92-959E-B16CF06CE44E" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.fade-in{
+<tw-storydata name="CYOA" startnode="13" creator="Twine" creator-version="2.9.0" format="Harlowe" format-version="3.3.9" ifid="9DEEF0FD-0A52-4A92-959E-B16CF06CE44E" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.fade-in{
   /*visibility: hidden;
   animation: fadeIn 4s forwards;*/
   color: red;
@@ -124,33 +124,27 @@ It was not long before news broke out and your team shared the secret software b
 
 Atlas, of course, responded by suing your team but the public was already beginning to protest and boycott the company. Public perception of the company was greatly affected, any goodwill Atlas had gained through their security software quickly being burned. As Atlas saw their revenue and stocks dip down as protests continued, shareholders urged Atlas management to respond.
 
-[[Continue-&gt;Atlas Backing Down]]</tw-passagedata><tw-passagedata pid="13" name="Continue your work" tags="" position="500,775" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[=
-&lt;span class=&quot;fade-in&quot;&gt;//test words...//&lt;/span&gt;
-(after:4s)[(go-to: &quot;Bad Ending&quot;)]</tw-passagedata><tw-passagedata pid="14" name="Prelude" tags="" position="800,150" size="100,100">This &quot;Choose Your Own Adventure&quot; story is based on the case study, &quot;Automated Active Response Weaponry&quot;, by the ACM Comittee on Professional Ethics.
+[[Continue-&gt;Atlas Backing Down]]</tw-passagedata><tw-passagedata pid="13" name="Prelude" tags="" position="800,150" size="100,100">This &quot;Choose Your Own Adventure&quot; story is based on the case study, &quot;Automated Active Response Weaponry&quot;, by the ACM Comittee on Professional Ethics.
 
 Created by Daniel Todd, Fraser Wong, and Tallal Gohar.
 
-[[Start-&gt;Intro]]</tw-passagedata><tw-passagedata pid="15" name="Keep your monotonous SQL querying job" tags="" position="875,600" size="100,100">You decide to politely decline the promotion and stick to your SQL querying. 
+[[Start-&gt;Intro]]</tw-passagedata><tw-passagedata pid="14" name="Keep your monotonous SQL querying job" tags="" position="875,600" size="100,100">You decide to politely decline the promotion and stick to your SQL querying. 
 
 Although it was disappointing you were not able to move up within your internship and do what you wanted to do, you felt it was a better option to stick with being bored than meddling with controversial government contracts. Your internship continued as a boring office job, working away at simplistic SQL queries, and before you knew it, the contract had reached its end.
 
 While the job did not end up being as fulfilling and exciting as you had hoped for, you still walked away with experience for you to use in the future.
 
-(text-colour:red)[[The End.-&gt;GAME OVER]]</tw-passagedata><tw-passagedata pid="16" name="GAME OVER" tags="" position="1500,350" size="200,100">&lt;!--This will have the game stats, giving a rundown of the outcome the player got and what choices they followed to get the outcome.--&gt;
+(text-colour:red)[[The End.-&gt;GAME OVER]]</tw-passagedata><tw-passagedata pid="15" name="GAME OVER" tags="" position="975,1475" size="200,100">&lt;!--This will have the game stats, giving a rundown of the outcome the player got and what choices they followed to get the outcome.--&gt;
 
 Thank you for playing!
 
-Your choices throughout the game:
+--------------------------------------
 
 (if:(history: where its name contains &quot;research the position&quot;)&#39;s length &gt;= 1)[You researched the job.]
 
-(if:(history: where its name contains &quot;decline the offer&quot;)&#39;s length &gt;= 1)[You declined the internship.]
+{(if:(history: where its name contains &quot;decline the offer&quot;)&#39;s length &gt;= 1)[You declined the internship.](else-if:(history: where its name contains &quot;take the job&quot;)&#39;s length &gt;= 1)[You accepted the job.]}
 
-(if:(history: where its name contains &quot;take the job&quot;)&#39;s length &gt;= 1)[You accepted the job.]
-
-(if:(history: where its name contains &quot;Keep your monotonous SQL querying job&quot;)&#39;s length &gt;= 1)[You did not accept the promotion.]
-
-(if:(history: where its name contains &quot;Take the promotion&quot;)&#39;s length &gt;= 1)[You accepted the promotion.]
+{(if:(history: where its name contains &quot;Keep your monotonous SQL querying job&quot;)&#39;s length &gt;= 1)[You did not accept the promotion.](else-if:(history: where its name contains &quot;Take the promotion&quot;)&#39;s length &gt;= 1)[You accepted the promotion.]}
 
 (if:(history: where its name contains &quot;Stay quiet and keep coding&quot;)&#39;s length &gt;= 1)[You stayed quiet about the ethical issues.]
 
@@ -162,15 +156,22 @@ Your choices throughout the game:
 
 (if:(history: where its name contains &quot;Ignore him and drive away&quot;)&#39;s length is 1)[You ignored the reporter.]
 
-(if:(history: where its name contains &quot;Break NDA and protest&quot;)&#39;s length &gt;= 1)[You decided to protest against Atlas.]</tw-passagedata><tw-passagedata pid="17" name="Ignore him and drive away" tags="" position="600,1000" size="100,100">After ignoring the reporter, you stop worrying about the potential issues and go on with your day. 
+(if:(history: where its name contains &quot;Break NDA and protest&quot;)&#39;s length &gt;= 1)[You decided to protest against Atlas.]
+
+(if:(history: where its name contains &quot;Move on to another project&quot;)&#39;s length &gt;= 1)[You moved back to your SQL job.]
+
+(if:(history: where its name contains &quot;Start work on the software patch&quot;)&#39;s length &gt;= 1)[The state police cancelled the project idefinitely.]
+
+(if:(history: where its name contains &quot;Atlas Backing Down&quot;)&#39;s length &gt;= 1)[Atlas shut down the surveillance project after being exposed.]</tw-passagedata><tw-passagedata pid="16" name="Ignore him and drive away" tags="" position="600,1000" size="100,100">After ignoring the reporter, you stop worrying about the potential issues and go on with your day. 
 
 Your team had begun the maintenance and support part of the project, monitoring the system. A few weeks later, a news story breaks out that the police misidentified and arrested a non-suspect. 
 
 The team quickly analyzes the software and realize the problem. The AI was having trouble accurately detecting faces, merging and trying its best to fit a description given from the database. An emergency meeting is held with members of the company to discuss what to do next. Many of the developers were concerned and wanted the issue to be fixed.
 
 [[Continue-&gt;Management addresses concerns]]
-</tw-passagedata><tw-passagedata pid="18" name="Set up a meeting with him the next day" tags="" position="975,1000" size="100,100">You decide to set up a meeting with the reporter and share some information about the project. Under an anonymous name, you specify details of the software, including the facial detection system, and criminal pattern matching. 
-[[Continue-&gt;Break NDA and protest]]</tw-passagedata><tw-passagedata pid="19" name="Quit the job but stay quiet about the issues" tags="" position="1425,975" size="100,100">While some of the team were vocal about leaving the project and sharing information with the public, you decided the team should quietly resign and stay in terms of the NDA.
+</tw-passagedata><tw-passagedata pid="17" name="Set up a meeting with him the next day" tags="" position="975,1000" size="100,100">You decide to set up a meeting with the reporter and share some information about the project. Under an anonymous name, you specify details of the software, including the facial detection system and criminal pattern matching. 
+
+[[Continue-&gt;Break NDA and protest]]</tw-passagedata><tw-passagedata pid="18" name="Quit the job but stay quiet about the issues" tags="" position="1425,975" size="100,100">While some of the team were vocal about leaving the project and sharing information with the public, you decided the team should quietly resign and stay in terms of the NDA.
 
 You were out of the Atlas internship and back to your usual studies. Management was upset by the number of people seemingly quiting the project and the company out of nowhere, needing to delay the project and invest more money in order to get it back on track.
 
@@ -178,18 +179,18 @@ Atlas eventually continued development and were able to deploy the software for 
 
 The ethical issues and concerns you had with the software seemed to have come true. You decided it was best to not mention your internship at Atlas anymore and hope the issues would be resolved in the near future.
 
-(text-colour:red)[[The End.-&gt;GAME OVER]]</tw-passagedata><tw-passagedata pid="20" name="Atlas Backing Down" tags="" position="1125,1100" size="100,100">Thanks to you and your team revealing the truth and giving the world the information of Atlas&#39; development of AI surveillance software, Atlas decided to shut the project down. While the state police were frustrated by this decision, Atlas prioritized the loss of income and goodwill over their client. 
+(text-colour:red)[[The End.-&gt;GAME OVER]]</tw-passagedata><tw-passagedata pid="19" name="Atlas Backing Down" tags="" position="1125,1100" size="100,100">Thanks to you and your team revealing the truth and giving the world the information of Atlas&#39; development of AI surveillance software, Atlas decided to shut the project down. While the state police were frustrated by this decision, Atlas prioritized the loss of income and goodwill over their client. 
 
 Of course, the lawsuit against you was still ongoing and Atlas were not going to waive it off. It was going to be a long and painful process over the coming months, but knowing you were able to stop the project from being deployed was something you were proud of. 
 
 (if:(history: where its name contains &quot;Discuss the issue with co-workers&quot;)&#39;s length is 1)[The public hailed you and your group as heroes, showing their support for you wherever they could.]
 
-(text-color:red)[[The End-&gt;GAME OVER]])</tw-passagedata><tw-passagedata pid="21" name="Management addresses concerns" tags="" position="725,1125" size="100,100">Despite concerns about the software&#39;s effectiveness, management believes it will only require a few minor adjustments. Developers suggest a complete overhaul to the model&#39;s facial recognition system, but are only given 2 weeks to resolve the issue. You are unsure on whether this would be enough to solve the problem.
+(text-color:red)[[The End-&gt;GAME OVER]])</tw-passagedata><tw-passagedata pid="20" name="Management addresses concerns" tags="" position="725,1125" size="100,100">Despite concerns about the software&#39;s effectiveness, management believes it will only require a few minor adjustments. Developers suggest a complete overhaul to the model&#39;s facial recognition system, but are only given 2 weeks to resolve the issue. You are unsure on whether this would be enough to solve the problem.
 
 [[Start work on the software patch]]
-[[Move on to another project]]</tw-passagedata><tw-passagedata pid="22" name="Start work on the software patch" tags="" position="725,1250" size="100,100">You begin patching the surveillence software, but are ultimately unable to fix all of the issues within the two-week time frame. The state police, unsatisfied with the lack of progress, cancel its deployment indefinitely. Somewhat relieved with this decision, you eventually complete your internship and continue with your studies.
+[[Move on to another project]]</tw-passagedata><tw-passagedata pid="21" name="Start work on the software patch" tags="" position="725,1250" size="100,100">You begin patching the surveillence software, but are ultimately unable to fix all of the issues within the two-week time frame. The state police, unsatisfied with the lack of progress, cancel its deployment indefinitely. Somewhat relieved with this decision, you eventually complete your internship and continue with your studies.
 
-(text-color:red)[[The End-&gt;GAME OVER]])</tw-passagedata><tw-passagedata pid="23" name="Move on to another project" tags="" position="850,1250" size="100,100">Doubtful that the fix would be completed in time, you insist to be transferred to another project. Atlas begrugingly obliges and moves you back to the SQL querying job you had previously. Although not as interesting as the surveillence project, you feel comfortable with you decision and complete your internship three weeks later. 
+(text-color:red)[[The End-&gt;GAME OVER]])</tw-passagedata><tw-passagedata pid="22" name="Move on to another project" tags="" position="850,1250" size="100,100">Doubtful that the fix would be completed in time, you insist to be transferred to another project. Atlas begrugingly obliges and moves you back to the SQL querying job you had previously. Although not as interesting as the surveillance project, you feel comfortable with you decision and complete your internship three weeks later. 
 
 (text-color:red)[[The End-&gt;GAME OVER]])</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
